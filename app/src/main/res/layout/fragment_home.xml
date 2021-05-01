@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_fuel"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/card_margin"
+        android:background="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:transitionName="openFuelFragment"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardMaxElevation="@dimen/card_elevation"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/fuel_card" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to Fuel"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".40" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/card_margin"
+        app:cardBackgroundColor="#FF5252"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardMaxElevation="@dimen/card_elevation"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5
+        " />
+
+            <TextView
+                android:id="@+id/odometer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="right|center_horizontal"
+                android:letterSpacing="1"
+                android:padding="12dp"
+                android:shadowColor="@android:color/black"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="left|center_vertical"
+                android:shadowColor="@android:color/black"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="KMS Driven"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/odometer2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/odometer2"
+                app:layout_constraintTop_toTopOf="@+id/odometer2" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:background="#ffffff"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline9"
+                app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+                <TextView
+                    android:id="@+id/textView3111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="MILEAGE"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/zzz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="KMPL"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="16dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/label_mileage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40"
+                    android:textSize="24sp"
+
+                    app:layout_constraintBottom_toTopOf="@+id/zzz"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3111" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:background="#ffffff"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/odometer2">
+
+                <TextView
+                    android:id="@+id/textView311"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="DISTANCE TO EMPTY"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/label_distance_to_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/transparent"
+                    android:text="50"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@id/xyz"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView311" />
+
+                <TextView
+                    android:id="@+id/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="KMS"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".70" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_trip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:transitionName="openTripfragment"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardMaxElevation="@dimen/card_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <ImageButton
+                android:id="@+id/goToTripButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/holo_blue_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center_vertical|end"
+                android:text="Go to Trip"
+                app:layout_constraintBottom_toBottomOf="@+id/goToTripButton"
+                app:layout_constraintEnd_toStartOf="@+id/goToTripButton"
+                app:layout_constraintStart_toStartOf="@+id/activeTrip"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/tripStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@android:color/transparent"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setTripName"
+                app:srcCompat="@drawable/ic_play_circle_filled_black_72dp" />
+
+            <EditText
+                android:id="@+id/setTripName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter trip name"
+                android:inputType="textPersonName"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goToTripButton" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/activeTrip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#239760"
+                    android:padding="4dp"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="Trip Active  "
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tripname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/cb6ix"
+                    android:padding="8dp"
+                    android:paddingStart="16dp"
+                    android:text="Trip Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+                <TextView
+                    android:id="@+id/tripDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cb6ix"
+                    android:paddingStart="16dp"
+                    android:paddingTop="0dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="set date"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/tripname" />
+
+                <TextView
+                    android:id="@+id/trip_get_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDy="2"
+                    android:text="Fuel Usage:"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tripDate" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDy="2"
+                    android:text="Distance Travelled:"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/trip_get_distance"
+                    app:layout_constraintTop_toBottomOf="@+id/trip_get_distance" />
+
+                <TextView
+                    android:id="@+id/tripFuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="375 mL"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/trip_get_distance"
+                    app:layout_constraintStart_toStartOf="@+id/tripDistance"
+                    app:layout_constraintTop_toTopOf="@+id/trip_get_distance" />
+
+                <TextView
+                    android:id="@+id/tripDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="1.2 KMS"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView35"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView35"
+                    app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

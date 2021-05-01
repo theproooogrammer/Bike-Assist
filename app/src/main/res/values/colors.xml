@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <color name="colorPrimary">#1261a0</color>
+    <color name="colorPrimaryDark">#072f5f</color>
+    <color name="colorAccent">#58cced</color>
+    <color name="waveBackground">#B87333</color>
+    -->FF000221
+
+
+    <color name="colorPrimary">@android:color/holo_blue_light</color>
+    <color name="colorPrimaryDark">@android:color/holo_blue_dark</color>
+    <color name="colorAccent">#58CCED</color>
+ <color name="lightDarkBlue">#FF092B59</color>
+
+ <color name="darkBlue">#FF000220</color>
+
+ <!--
+      <color name="colorPrimary">#FF092B59</color>
+      <color name="colorPrimaryDark">#FF000220</color>
+      <color name="colorAccent">#58CCED</color>
+     <color name="colorPrimary">#660000</color>
+     <color name="colorSecondary">#0099CC</color>
+     <color name="colorSecondaryDark">#0099CC</color>
+     <color name="colorPrimaryDark">#660000</color>
+     <color name="colorAccent">#dbdbdb</color>-->
+
+    <color name="waveBackground">#ffB87333</color>
+    <color name="NEW3">#FFAC1B4A</color>
+    <color name="textShadowColor">#000000</color>
+
+
+</resources>
