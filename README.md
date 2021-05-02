@@ -19,9 +19,6 @@
 
 ![0](https://user-images.githubusercontent.com/60536632/116806907-a9879a80-ab4d-11eb-94c7-e407586ae420.jpg)
 
-***Setting Alert***
-![6](https://user-images.githubusercontent.com/60536632/116806920-bad0a700-ab4d-11eb-8a75-762fc6e55677.jpg)
-
 ## Trip Mode :
 
 ![4](https://user-images.githubusercontent.com/60536632/116806910-b0161200-ab4d-11eb-8a80-105a28d1652b.jpg)
