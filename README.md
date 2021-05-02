@@ -17,9 +17,11 @@
 
 ## Fuel Fragment :
 
+***Setting Alert***
+
 ![0](https://user-images.githubusercontent.com/60536632/116806907-a9879a80-ab4d-11eb-94c7-e407586ae420.jpg)
 
-***Setting Alert***
+***Alert message to user***
 
 ![7](https://user-images.githubusercontent.com/60536632/116807102-dc7e5e00-ab4e-11eb-8811-9260a36e7303.jpg)
 
